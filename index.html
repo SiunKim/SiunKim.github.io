@@ -4,311 +4,404 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Siun Kim — Sr. AI Engineer</title>
-  <meta name="description" content="Siun Kim — Sr. AI Engineer @ Selta Square. Biomedical NLP and clinical AI researcher." />
+  <meta name="description" content="Siun Kim — Sr. AI Engineer @ Selta Square. Biomedical NLP and clinical AI researcher: clinical information extraction and evaluating large language models for real-world medical use." />
+
+  <!-- Open Graph / Twitter cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Siun Kim — Sr. AI Engineer" />
+  <meta property="og:description" content="Biomedical NLP & clinical AI researcher — clinical information extraction and evaluating LLMs for real-world medical use." />
+  <meta property="og:url" content="https://siunkim.github.io/" />
+  <meta property="og:image" content="https://siunkim.github.io/assets/profile.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Siun Kim — Sr. AI Engineer" />
+  <meta name="twitter:description" content="Biomedical NLP & clinical AI researcher — clinical information extraction and evaluating LLMs for real-world medical use." />
+  <meta name="twitter:image" content="https://siunkim.github.io/assets/profile.jpg" />
+
   <link rel="icon" href="assets/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured data (schema.org Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Siun Kim",
+    "jobTitle": "Senior AI Engineer",
+    "worksFor": { "@type": "Organization", "name": "Selta Square" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Seoul National University" },
+    "url": "https://siunkim.github.io/",
+    "image": "https://siunkim.github.io/assets/profile.jpg",
+    "email": "mailto:sukim@seltasquare.com",
+    "knowsAbout": [
+      "Biomedical Natural Language Processing",
+      "Clinical Information Extraction",
+      "Large Language Models",
+      "Machine Learning for Drug Development",
+      "Clinical Informatics",
+      "Clinical Pharmacology"
+    ],
+    "sameAs": [
+      "https://scholar.google.co.kr/citations?user=-CBtswUAAAAJ&hl=en",
+      "https://www.linkedin.com/in/siun-kim-13a976182/",
+      "https://github.com/SiunKim",
+      "https://aclanthology.org/people/siun-kim/"
+    ]
+  }
+  </script>
 </head>
 <body>
-<!-- Siun Kim — personal website (single-page, GitHub Pages) -->
-<header class="topbar">
-  <nav class="nav" aria-label="Section navigation">
-    <a class="nav-brand" href="#top">Siun Kim</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#talks">Talks</a></li>
-      <li><a href="#awards">Awards</a></li>
-    </ul>
-  </nav>
-</header>
+<div class="page" id="top">
 
-<main id="top" class="page">
-
-  <!-- ===================== HERO / HEADER ===================== -->
-  <section class="hero" id="about">
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar">
     <img
       class="avatar"
       src="assets/profile.jpg"
       alt="Siun Kim"
       onerror="this.outerHTML='&lt;div class=&quot;avatar avatar-fallback&quot;&gt;SK&lt;/div&gt;'"
     />
-    <div class="hero-body">
-      <h1>Siun Kim</h1>
-      <p class="tagline">Sr. AI Engineer @ Selta Square</p>
-      <p class="summary">
-        Biomedical NLP &amp; clinical AI researcher focused on extracting structured
-        knowledge from clinical and biomedical text, and on evaluating large language
-        models for real-world medical use.
-      </p>
+    <h1>Siun Kim</h1>
+    <p class="tagline">Sr. AI Engineer @ Selta Square</p>
+    <p class="summary">
+      Biomedical NLP &amp; clinical AI researcher — extracting structured knowledge
+      from clinical text and evaluating large language models for real-world
+      medical use.
+    </p>
 
-      <div class="links">
-        <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
-        <a class="btn" href="https://scholar.google.co.kr/citations?user=-CBtswUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a class="btn" href="https://www.linkedin.com/in/siun-kim-13a976182/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/SiunKim" target="_blank" rel="noopener">GitHub</a>
-      </div>
-
-      <ul class="contact">
-        <li>📍 9F, Chosun Refractories Bldg, 577 Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</li>
-        <li>✉️ <a href="mailto:sukim@seltasquare.com">sukim@seltasquare.com</a></li>
-        <li>📞 +82-10-6657-0806</li>
-      </ul>
+    <div class="social" aria-label="Links">
+      <a href="assets/cv.pdf" target="_blank" rel="noopener" title="CV (PDF)" aria-label="CV">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+      </a>
+      <a href="https://scholar.google.co.kr/citations?user=-CBtswUAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.909V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/siun-kim-13a976182/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a href="https://github.com/SiunKim" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+      </a>
+      <a href="mailto:sukim@seltasquare.com" title="Email" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
     </div>
-  </section>
 
-  <!-- ===================== RESEARCH INTERESTS ===================== -->
-  <section id="research">
-    <h2>Research Interests</h2>
-    <ul class="tags">
-      <li>Clinical / Document Information Extraction</li>
-      <li>Biomedical Natural Language Processing</li>
-      <li>ML-based Drug Development</li>
-      <li>Clinical Informatics</li>
-      <li>Clinical Pharmacology &amp; Regulatory Science</li>
+    <ul class="contact">
+      <li>9F, Chosun Refractories Bldg, 577 Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</li>
+      <li><a href="mailto:sukim@seltasquare.com">sukim@seltasquare.com</a></li>
+      <li>+82-10-6657-0806</li>
     </ul>
-  </section>
 
-  <!-- ===================== EXPERIENCE ===================== -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul class="timeline">
-      <li>
-        <div class="when">Present</div>
-        <div class="what">
-          <strong>Sr. AI Engineer</strong>
-          <span class="where">Selta Square</span>
-        </div>
-      </li>
-      <li>
-        <div class="when">2024.8 – 2025.12</div>
-        <div class="what">
-          <strong>Research Assistant Professor</strong>
-          <span class="where">Biomedical Research Institute, Seoul National University Hospital</span>
-        </div>
-      </li>
-      <li>
-        <div class="when">2023.3 – 2024.7</div>
-        <div class="what">
-          <strong>Post-doctoral Researcher</strong>
-          <span class="where">Seoul National University Hospital</span>
-        </div>
-      </li>
-    </ul>
-  </section>
+    <nav class="side-nav" aria-label="Section navigation">
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#talks">Talks</a>
+      <a href="#awards">Awards</a>
+      <a href="#service">Review</a>
+    </nav>
+  </aside>
 
-  <!-- ===================== EDUCATION ===================== -->
-  <section id="education">
-    <h2>Education</h2>
-    <ul class="timeline">
-      <li>
-        <div class="when">2018.3 – 2023.2</div>
-        <div class="what">
-          <strong>Ph.D. in Applied Bio-Engineering</strong>
-          <span class="where">Seoul National University</span>
-        </div>
-      </li>
-      <li>
-        <div class="when">2013.3 – 2018.2</div>
-        <div class="what">
-          <strong>B.S. in Biology and Anthropology</strong>
-          <span class="where">Seoul National University</span>
-        </div>
-      </li>
-      <li>
-        <div class="when">2011.3 – 2013.2</div>
-        <div class="what">
-          <strong>Gyeonggi Science High School</strong>
-        </div>
-      </li>
-    </ul>
-  </section>
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="content">
 
-  <!-- ===================== PUBLICATIONS ===================== -->
-  <section id="publications">
-    <h2>Publications</h2>
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul class="tags">
+        <li>Clinical / Document Information Extraction</li>
+        <li>Biomedical Natural Language Processing</li>
+        <li>ML-based Drug Development</li>
+        <li>Clinical Informatics</li>
+        <li>Clinical Pharmacology &amp; Regulatory Science</li>
+      </ul>
+    </section>
 
-    <h3 class="pub-group">Journal Articles</h3>
-    <ol class="pubs">
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Jiwon Ryu, Sejoong Kim, Su Hwan Kim, Myeongju Kim, Hyung-Jin Yoon.</span>
-        <a class="title" href="https://doi.org/10.3389/fdgth.2026.1804788" target="_blank" rel="noopener">Intra-session recurrence in intradialytic hypotension prediction: evaluation implications and recurrence-aware modeling.</a>
-        <span class="venue">Frontiers in Digital Health</span> <span class="year">2026</span>
-      </li>
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, David Seung U Lee, Yujin Kim, Hyung-Jin Yoon, Howard Lee.</span>
-        <a class="title" href="https://doi.org/10.1016/j.jbi.2026.104982" target="_blank" rel="noopener">Beyond fine-tuning: leveraging domain-aware in-context learning with large language models for clinical named entity recognition.</a>
-        <span class="venue">Journal of Biomedical Informatics</span> <span class="year">2026</span>
-      </li>
-      <li>
-        <span class="authors">Jung-Hyun Won, Yesol Hong, <span class="me">Siun Kim</span>, Howard Lee.</span>
-        <a class="title" href="https://doi.org/10.3389/fpubh.2024.1403153" target="_blank" rel="noopener">One-year post-acute COVID-19 syndrome and mortality in South Korea: a nationwide matched cohort study using claims data.</a>
-        <span class="venue">Frontiers in Public Health</span> <span class="year">2024</span>
-      </li>
-      <li>
-        <span class="authors">Junmo Kim, Hyun-Lim Yang, Su Hwan Kim, <span class="me">Siun Kim</span>, Jisoo Lee, Jiwon Ryu, Kwangsoo Kim, Zio Kim, Gun Ahn, Doyun Kwon, Hyung-Jin Yoon.</span>
-        <a class="title" href="https://doi.org/10.1016/j.eclinm.2024.102445" target="_blank" rel="noopener">Deep learning-based long-term risk evaluation of incident type 2 diabetes using electrocardiogram in a non-diabetic population: a retrospective, multicentre study.</a>
-        <span class="venue">eClinicalMedicine</span> <span class="year">2024</span>
-      </li>
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Taegwan Kang, Tae Kyu Chung, Yoona Choi, YeSol Hong, Kyomin Jung, Howard Lee.</span>
-        <a class="title" href="https://doi.org/10.1007/s40264-023-01323-2" target="_blank" rel="noopener">Automatic extraction of comprehensive drug safety information from adverse drug event narratives in the Korea Adverse Event Reporting System using natural language processing techniques.</a>
-        <span class="venue">Drug Safety</span> <span class="year">2023</span>
-      </li>
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Yoona Choi, Jung-Hyun Won, Jung Mi Oh, Howard Lee.</span>
-        <a class="title" href="https://doi.org/10.1016/j.jbi.2022.103985" target="_blank" rel="noopener">An annotated corpus from biomedical articles to construct a drug-food interaction database.</a>
-        <span class="venue">Journal of Biomedical Informatics</span> <span class="year">2022</span>
-      </li>
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Hyun A Lee, Seong Bok Jang, Howard Lee.</span>
-        <a class="title" href="https://doi.org/10.1002/psp4.12664" target="_blank" rel="noopener">A population pharmacokinetic-pharmacodynamic model of YH12852, a highly selective 5-hydroxytryptamine 4 receptor agonist, in healthy subjects and patients with functional constipation.</a>
-        <span class="venue">CPT: Pharmacometrics &amp; Systems Pharmacology</span> <span class="year">2021</span>
-      </li>
-      <li>
-        <span class="authors">Soohyun Kim, <span class="me">Siun Kim</span>, Howard Lee.</span>
-        <a class="title" href="https://doi.org/10.2147/DDDT.S254776" target="_blank" rel="noopener">A critical review of the United States regulatory pathways for determining the equivalence of efficacy between CT-P13 and original infliximab (Remicade).</a>
-        <span class="venue">Drug Design, Development and Therapy</span> <span class="year">2020</span>
-      </li>
-    </ol>
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <div class="when">Present</div>
+          <div class="what"><strong>Sr. AI Engineer</strong><span class="where">Selta Square</span></div>
+        </li>
+        <li>
+          <div class="when">2024.8 – 2025.12</div>
+          <div class="what"><strong>Research Assistant Professor</strong><span class="where">Biomedical Research Institute, Seoul National University Hospital</span></div>
+        </li>
+        <li>
+          <div class="when">2023.3 – 2024.7</div>
+          <div class="what"><strong>Post-doctoral Researcher</strong><span class="where">Seoul National University Hospital</span></div>
+        </li>
+      </ul>
+    </section>
 
-    <h3 class="pub-group">Conference &amp; Workshop Papers</h3>
-    <ol class="pubs">
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Hyung-Jin Yoon, Howard Lee.</span>
-        <a class="title" href="https://aclanthology.org/2026.acl-long.795/" target="_blank" rel="noopener">DiZiNER: disagreement-guided instruction refinement via simulating pilot annotation for zero-shot named entity recognition.</a>
-        <span class="venue">ACL 2026 (Main)</span> <span class="year">2026</span>
-      </li>
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Hyung-Jin Yoon.</span>
-        <a class="title" href="https://aclanthology.org/2025.bionlp-1.24/" target="_blank" rel="noopener">Questioning our questions: how well do medical QA benchmarks evaluate clinical capabilities of language models?</a>
-        <span class="venue">BioNLP Workshop @ ACL 2025, Vienna</span> <span class="year">2025</span>
-      </li>
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Hyung-Jin Yoon.</span>
-        <a class="title" href="https://doi.org/10.3233/SHTI250501" target="_blank" rel="noopener">Large language model-assisted systematic review: validation based on Cochrane review data.</a>
-        <span class="venue">Medical Informatics Europe (MIE) 2025 · Stud Health Technol Inform</span> <span class="year">2025</span>
-      </li>
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Jung-Hyun Won, David Seung U Lee, Renqian Luo, Lijun Wu, Yingce Xia, Tao Qin, Howard Lee.</span>
-        <a class="title" href="https://aclanthology.org/2024.findings-eacl.149/" target="_blank" rel="noopener">CReSE: benchmark data and automatic evaluation framework for recommending eligibility criteria from clinical trial information.</a>
-        <span class="venue">Findings of EACL 2024</span> <span class="year">2024</span>
-      </li>
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Jung-Hyun Won, David Seung U Lee, Renqian Luo, Lijun Wu, Yingce Xia, Tao Qin, Howard Lee.</span>
-        <a class="title" href="https://proceedings.mlr.press/v209/kim23a.html" target="_blank" rel="noopener">Revisiting machine learning based drug repurposing: drug indications are not a right prediction target.</a>
-        <span class="venue">Conference on Health, Inference, and Learning (CHIL) 2023, PMLR</span> <span class="year">2023</span>
-      </li>
-    </ol>
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li>
+          <div class="when">2018.3 – 2023.2</div>
+          <div class="what"><strong>Ph.D. in Applied Bio-Engineering</strong><span class="where">Seoul National University</span></div>
+        </li>
+        <li>
+          <div class="when">2013.3 – 2018.2</div>
+          <div class="what"><strong>B.S. in Biology and Anthropology</strong><span class="where">Seoul National University</span></div>
+        </li>
+        <li>
+          <div class="when">2011.3 – 2013.2</div>
+          <div class="what"><strong>Gyeonggi Science High School</strong></div>
+        </li>
+      </ul>
+    </section>
 
-    <h3 class="pub-group">Book</h3>
-    <ol class="pubs">
-      <li>
-        <span class="authors"><span class="me">Siun Kim</span>, Howard Lee.</span>
-        <a class="title" href="https://product.kyobobook.co.kr/detail/S000209182653" target="_blank" rel="noopener">The Era of Biologics is Coming.</a>
-        <span class="venue">Young Doc Press</span> <span class="year">2019</span>
-        <span class="badge">Selected as 2022 Sejong Book</span>
-      </li>
-    </ol>
-  </section>
+    <section id="publications">
+      <h2>Publications</h2>
 
-  <!-- ===================== PROJECTS ===================== -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul class="projects">
-      <li><strong>Global Data Convergence Leader Training Program — practical management</strong> · Seoul National University Hospital (2024.8 – 2025.12). General manager overseeing research committee activities, student research supervision, and development of clinical text generation and medical language models.</li>
-      <li><strong>Quantitative evaluation of medical QA benchmarks for clinical LLM capabilities</strong> · SNUH (2025.2 – 2025.8). Investigating the limitations of medical licensing exams as evaluation metrics for clinical LLMs.</li>
-      <li><strong>Zero-shot NER via disagreement signals across multiple LLMs</strong> (2023.3 – 2025.10). Model-iteration configuration selection outperforming instruction fine-tuned baselines.</li>
-      <li><strong>LLM-based automation of systematic literature reviews, validated on Cochrane reviews</strong> (2023.3 – 2025.10). Pipeline achieving ~90% recall with improved reproducibility.</li>
-      <li><strong>Key patient-information extraction from Hematology-Oncology clinical notes</strong> (2023.3 – 2025.10). Extracting diagnoses, symptoms, and prescriptions using few-shot retrieval and LLM in-context learning.</li>
-      <li><strong>Emergency-department case retrieval system based on clinical guidelines</strong> · SNUH (2024.3 – 2025.12).</li>
-      <li><strong>Eating alone as a mediator for depression in one-person households</strong> (2025.1 – 2025.12). Epidemiological analysis using KNHANES data.</li>
-      <li><strong>Intra-dialysis hypotension (IDH) prediction from TDMS time-series vital-sign and dialyzer data</strong> · SNUH (2023.3 – 2025.8). Lead researcher.</li>
-      <li><strong>Revisiting ML-based drug repositioning with clinical-trial eligibility criteria</strong> · Microsoft Research Asia (2022.5 – 2023.4). Reformulation of ML-based drug repositioning with eligibility-criteria recommendation.</li>
-      <li><strong>Prospective real-world registry for pediatric ALL from multi-institutional EHRs</strong> · Korea Health Industry Development Institute (2022.3 – 2022.12). Report-form design and extraction-algorithm development.</li>
-      <li><strong>NLP algorithms for extracting key clinical information from drug adverse-event reports</strong> · Ministry of Food and Drug Safety (2021.2 – 2022.2). Project lead.</li>
-      <li><strong>Target Product Profile (TPP) of REX101, a bacterial-exosome anticancer therapy</strong> · Rosetta Exosome (2021.3 – 2021.12). Lead researcher.</li>
-      <li><strong>IDX-1197 development strategy consultation</strong> · Idience Co., Ltd (2020.10 – 2021.2). Pre-clinical and clinical database construction for PARP inhibitors.</li>
-      <li><strong>Drug-interaction evaluation using big data and machine learning</strong> · Ministry of Food and Drug Safety (2018.2 – 2022.2). NLP for drug-food interaction extraction and drug-drug interaction prediction.</li>
-      <li><strong>PK/PD data analysis for Phase 1 trials of YH12852 and CWP232291</strong> · Seoul National University (2018.3 – 2022.12). Analysis resulting in a population PK/PD model publication.</li>
-    </ul>
-  </section>
+      <h3 class="pub-group">Journal Articles</h3>
+      <ol class="pubs">
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Jiwon Ryu, Sejoong Kim, Su Hwan Kim, Myeongju Kim, Hyung-Jin Yoon.</span>
+          <span class="p-title">Intra-session recurrence in intradialytic hypotension prediction: evaluation implications and recurrence-aware modeling.</span>
+          <span class="p-meta"><span class="venue">Frontiers in Digital Health</span> <span class="year">2026</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://doi.org/10.3389/fdgth.2026.1804788" target="_blank" rel="noopener">DOI</a>
+            <a class="chip" href="https://github.com/SiunKim/IDH-Recurrence-Prediction" target="_blank" rel="noopener">Code</a>
+            <details class="tldr"><summary>TL;DR</summary>Ignoring within-session recurrence of intradialytic hypotension inflates reported model performance; recurrence-aware modeling gives a fairer, better real-time predictor.</details>
+          </span>
+        </li>
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, David Seung U Lee, Yujin Kim, Hyung-Jin Yoon, Howard Lee.</span>
+          <span class="p-title">Beyond fine-tuning: leveraging domain-aware in-context learning with large language models for clinical named entity recognition.</span>
+          <span class="p-meta"><span class="venue">Journal of Biomedical Informatics</span> <span class="year">2026</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://doi.org/10.1016/j.jbi.2026.104982" target="_blank" rel="noopener">DOI</a>
+            <a class="chip" href="https://github.com/SiunKim/clinical-information-extraction-llm-icl" target="_blank" rel="noopener">Code</a>
+            <details class="tldr"><summary>TL;DR</summary>With domain-aware demonstration selection, open-source LLM in-context learning matches or beats encoder fine-tuning for clinical NER — especially with limited data and across institutions.</details>
+          </span>
+        </li>
+        <li>
+          <span class="authors">Jung-Hyun Won, Yesol Hong, <span class="me">Siun Kim</span>, Howard Lee.</span>
+          <span class="p-title">One-year post-acute COVID-19 syndrome and mortality in South Korea: a nationwide matched cohort study using claims data.</span>
+          <span class="p-meta"><span class="venue">Frontiers in Public Health</span> <span class="year">2024</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://doi.org/10.3389/fpubh.2024.1403153" target="_blank" rel="noopener">DOI</a>
+          </span>
+        </li>
+        <li>
+          <span class="authors">Junmo Kim, Hyun-Lim Yang, Su Hwan Kim, <span class="me">Siun Kim</span>, Jisoo Lee, Jiwon Ryu, Kwangsoo Kim, Zio Kim, Gun Ahn, Doyun Kwon, Hyung-Jin Yoon.</span>
+          <span class="p-title">Deep learning-based long-term risk evaluation of incident type 2 diabetes using electrocardiogram in a non-diabetic population: a retrospective, multicentre study.</span>
+          <span class="p-meta"><span class="venue">eClinicalMedicine</span> <span class="year">2024</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://doi.org/10.1016/j.eclinm.2024.102445" target="_blank" rel="noopener">DOI</a>
+          </span>
+        </li>
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Taegwan Kang, Tae Kyu Chung, Yoona Choi, YeSol Hong, Kyomin Jung, Howard Lee.</span>
+          <span class="p-title">Automatic extraction of comprehensive drug safety information from adverse drug event narratives in the Korea Adverse Event Reporting System using natural language processing techniques.</span>
+          <span class="p-meta"><span class="venue">Drug Safety</span> <span class="year">2023</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://doi.org/10.1007/s40264-023-01323-2" target="_blank" rel="noopener">DOI</a>
+            <a class="chip" href="https://github.com/SiunKim/AENLP" target="_blank" rel="noopener">Code</a>
+            <details class="tldr"><summary>TL;DR</summary>Frames drug-safety extraction as NLP tasks, annotates 3,723 adverse-event narratives, and trains KAERS-BERT (NER F1 ≈ 84%) to enrich spontaneous-reporting data.</details>
+          </span>
+        </li>
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Yoona Choi, Jung-Hyun Won, Jung Mi Oh, Howard Lee.</span>
+          <span class="p-title">An annotated corpus from biomedical articles to construct a drug-food interaction database.</span>
+          <span class="p-meta"><span class="venue">Journal of Biomedical Informatics</span> <span class="year">2022</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://doi.org/10.1016/j.jbi.2022.103985" target="_blank" rel="noopener">DOI</a>
+            <a class="chip" href="https://github.com/ccadd-snu/corpus-for-DFI-extraction" target="_blank" rel="noopener">Code</a>
+            <details class="tldr"><summary>TL;DR</summary>Introduces the largest public drug–food interaction corpus (2,270 biomedical abstracts) with BERT baselines for extraction.</details>
+          </span>
+        </li>
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Hyun A Lee, Seong Bok Jang, Howard Lee.</span>
+          <span class="p-title">A population pharmacokinetic-pharmacodynamic model of YH12852, a highly selective 5-hydroxytryptamine 4 receptor agonist, in healthy subjects and patients with functional constipation.</span>
+          <span class="p-meta"><span class="venue">CPT: Pharmacometrics &amp; Systems Pharmacology</span> <span class="year">2021</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://doi.org/10.1002/psp4.12664" target="_blank" rel="noopener">DOI</a>
+          </span>
+        </li>
+        <li>
+          <span class="authors">Soohyun Kim, <span class="me">Siun Kim</span>, Howard Lee.</span>
+          <span class="p-title">A critical review of the United States regulatory pathways for determining the equivalence of efficacy between CT-P13 and original infliximab (Remicade).</span>
+          <span class="p-meta"><span class="venue">Drug Design, Development and Therapy</span> <span class="year">2020</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://doi.org/10.2147/DDDT.S254776" target="_blank" rel="noopener">DOI</a>
+          </span>
+        </li>
+      </ol>
 
-  <!-- ===================== TALKS / CONFERENCE PRESENTATIONS ===================== -->
-  <section id="talks">
-    <h2>Conference Presentations</h2>
-    <ul class="talks">
-      <li>
-        <a href="https://youtu.be/0VxXLnHAH30" target="_blank" rel="noopener">CReSE: benchmark data and automatic evaluation framework for recommending eligibility criteria from clinical trial information</a>
-        — <span class="venue">EACL 2024, Malta</span> (Mar. 2024) · Poster
-      </li>
-      <li>
-        How to address data scarcity and bias for AI-powered drug discovery
-        — <span class="venue">2023 Fall Korean Society of Medical Informatics Conference, Seoul</span> (Nov. 2023) · Oral
-      </li>
-      <li>
-        An annotated corpus and NLP model for drug safety information extraction from free-text adverse-event reports
-        — <span class="venue">2021 Fall Korean Society of Medical Informatics Conference, Seoul</span> (Nov. 2021) · Oral
-      </li>
-      <li>
-        A population PK-PD model of YH12852, a highly selective 5-HT4 receptor agonist
-        — <span class="venue">Population Approach Group in Korea, Iksan</span> (Nov. 2020) · Oral
-      </li>
-      <li>
-        Development of an annotation guideline to extract drug-food interaction information for machine learning
-        — <span class="venue">Korean Society for Clinical Pharmacology and Therapeutics, Yeosu</span> (Nov. 2019) · Poster
-      </li>
-      <li>
-        A population PK-PD model to characterize the increase in gastrointestinal motility by YH12852
-        — <span class="venue">2019 AAPS PharmSci 360, San Antonio, USA</span> (Nov. 2019) · Poster
-      </li>
-    </ul>
-  </section>
+      <h3 class="pub-group">Conference &amp; Workshop Papers</h3>
+      <ol class="pubs">
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Hyung-Jin Yoon, Howard Lee.</span>
+          <span class="p-title">DiZiNER: disagreement-guided instruction refinement via simulating pilot annotation for zero-shot named entity recognition.</span>
+          <span class="p-meta"><span class="venue">ACL 2026 (Main)</span> <span class="year">2026</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://aclanthology.org/2026.acl-long.795/" target="_blank" rel="noopener">ACL</a>
+            <a class="chip" href="https://github.com/SiunKim/diziner-ner" target="_blank" rel="noopener">Code</a>
+            <details class="tldr"><summary>TL;DR</summary>Multiple LLMs annotate the same text; a supervisor LLM turns their disagreements into refined instructions — no fine-tuning. Reaches zero-shot state of the art on 14 of 18 NER benchmarks.</details>
+          </span>
+        </li>
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Hyung-Jin Yoon.</span>
+          <span class="p-title">Questioning our questions: how well do medical QA benchmarks evaluate clinical capabilities of language models?</span>
+          <span class="p-meta"><span class="venue">BioNLP Workshop @ ACL 2025, Vienna</span> <span class="year">2025</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://aclanthology.org/2025.bionlp-1.24/" target="_blank" rel="noopener">ACL</a>
+            <a class="chip" href="https://github.com/SiunKim/questioning-medqa" target="_blank" rel="noopener">Code</a>
+            <details class="tldr"><summary>TL;DR</summary>Shows that popular medical QA benchmarks (e.g., licensing exams) poorly reflect the real clinical capabilities of language models, and points toward better evaluation.</details>
+          </span>
+        </li>
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Hyung-Jin Yoon.</span>
+          <span class="p-title">Large language model-assisted systematic review: validation based on Cochrane review data.</span>
+          <span class="p-meta"><span class="venue">Medical Informatics Europe (MIE) 2025 · Stud Health Technol Inform</span> <span class="year">2025</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://doi.org/10.3233/SHTI250501" target="_blank" rel="noopener">DOI</a>
+          </span>
+        </li>
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Jung-Hyun Won, David Seung U Lee, Renqian Luo, Lijun Wu, Yingce Xia, Tao Qin, Howard Lee.</span>
+          <span class="p-title">CReSE: benchmark data and automatic evaluation framework for recommending eligibility criteria from clinical trial information.</span>
+          <span class="p-meta"><span class="venue">Findings of EACL 2024</span> <span class="year">2024</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://aclanthology.org/2024.findings-eacl.149/" target="_blank" rel="noopener">ACL</a>
+            <a class="chip" href="https://github.com/SiunKim/clinical_trial_eligibility_criteria_recommendation" target="_blank" rel="noopener">Code</a>
+            <details class="tldr"><summary>TL;DR</summary>Benchmark data and an automatic evaluation framework for recommending clinical-trial eligibility criteria from trial information.</details>
+          </span>
+        </li>
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Jung-Hyun Won, David Seung U Lee, Renqian Luo, Lijun Wu, Yingce Xia, Tao Qin, Howard Lee.</span>
+          <span class="p-title">Revisiting machine learning based drug repurposing: drug indications are not a right prediction target.</span>
+          <span class="p-meta"><span class="venue">Conference on Health, Inference, and Learning (CHIL) 2023, PMLR</span> <span class="year">2023</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://proceedings.mlr.press/v209/kim23a.html" target="_blank" rel="noopener">PMLR</a>
+          </span>
+        </li>
+      </ol>
 
-  <!-- ===================== AWARDS ===================== -->
-  <section id="awards">
-    <h2>Awards &amp; Honors</h2>
-    <ul class="awards">
-      <li><strong>First Prize, Best Paper</strong> — The 24th Workshop on Biomedical Language Processing (BioNLP @ ACL 2025), Vienna, Austria (Aug. 2025)</li>
-      <li><strong>Best Article Presentation (1st)</strong> — Korean Society for Clinical Pharmacology and Therapeutics (Nov. 2021)</li>
-      <li><strong>Best Original Research Article (1st)</strong> — The Korean Society of Medical Informatics (Oct. 2021)</li>
-      <li><strong>Presidential Science Scholarship</strong> — Korea Student Aid Foundation (2013 – 2017)</li>
-    </ul>
-  </section>
+      <h3 class="pub-group">Book</h3>
+      <ol class="pubs">
+        <li>
+          <span class="authors"><span class="me">Siun Kim</span>, Howard Lee.</span>
+          <span class="p-title">The Era of Biologics is Coming.</span>
+          <span class="p-meta"><span class="venue">Young Doc Press</span> <span class="year">2019</span> <span class="badge">Selected as 2022 Sejong Book</span></span>
+          <span class="p-links">
+            <a class="chip" href="https://product.kyobobook.co.kr/detail/S000209182653" target="_blank" rel="noopener">Kyobo</a>
+          </span>
+        </li>
+      </ol>
+    </section>
 
-  <!-- ===================== REVIEW EXPERIENCE ===================== -->
-  <section id="service">
-    <h2>Review Experience</h2>
-    <ul class="service">
-      <li><strong>Conferences:</strong> ML4H (2024, 2025, 2026), MLHC (2025, 2026), BioNLP Workshop (2025)</li>
-      <li><strong>Journal:</strong> JAMIA (2024, 2025, 2026)</li>
-    </ul>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li><strong>Global Data Convergence Leader Training Program — practical management</strong> · Seoul National University Hospital (2024.8 – 2025.12). General manager overseeing research committee activities, student research supervision, and development of clinical text generation and medical language models.</li>
+        <li><strong>Quantitative evaluation of medical QA benchmarks for clinical LLM capabilities</strong> · SNUH (2025.2 – 2025.8). Investigating the limitations of medical licensing exams as evaluation metrics for clinical LLMs.</li>
+        <li><strong>Zero-shot NER via disagreement signals across multiple LLMs</strong> (2023.3 – 2025.10). Model-iteration configuration selection outperforming instruction fine-tuned baselines.</li>
+        <li><strong>LLM-based automation of systematic literature reviews, validated on Cochrane reviews</strong> (2023.3 – 2025.10). Pipeline achieving ~90% recall with improved reproducibility.</li>
+        <li><strong>Key patient-information extraction from Hematology-Oncology clinical notes</strong> (2023.3 – 2025.10). Extracting diagnoses, symptoms, and prescriptions using few-shot retrieval and LLM in-context learning.</li>
+        <li><strong>Emergency-department case retrieval system based on clinical guidelines</strong> · SNUH (2024.3 – 2025.12).</li>
+        <li><strong>Eating alone as a mediator for depression in one-person households</strong> (2025.1 – 2025.12). Epidemiological analysis using KNHANES data.</li>
+        <li><strong>Intra-dialysis hypotension (IDH) prediction from TDMS time-series vital-sign and dialyzer data</strong> · SNUH (2023.3 – 2025.8). Lead researcher.</li>
+        <li><strong>Revisiting ML-based drug repositioning with clinical-trial eligibility criteria</strong> · Microsoft Research Asia (2022.5 – 2023.4). Reformulation of ML-based drug repositioning with eligibility-criteria recommendation.</li>
+        <li><strong>Prospective real-world registry for pediatric ALL from multi-institutional EHRs</strong> · Korea Health Industry Development Institute (2022.3 – 2022.12). Report-form design and extraction-algorithm development.</li>
+        <li><strong>NLP algorithms for extracting key clinical information from drug adverse-event reports</strong> · Ministry of Food and Drug Safety (2021.2 – 2022.2). Project lead.</li>
+        <li><strong>Target Product Profile (TPP) of REX101, a bacterial-exosome anticancer therapy</strong> · Rosetta Exosome (2021.3 – 2021.12). Lead researcher.</li>
+        <li><strong>IDX-1197 development strategy consultation</strong> · Idience Co., Ltd (2020.10 – 2021.2). Pre-clinical and clinical database construction for PARP inhibitors.</li>
+        <li><strong>Drug-interaction evaluation using big data and machine learning</strong> · Ministry of Food and Drug Safety (2018.2 – 2022.2). NLP for drug-food interaction extraction and drug-drug interaction prediction.</li>
+        <li><strong>PK/PD data analysis for Phase 1 trials of YH12852 and CWP232291</strong> · Seoul National University (2018.3 – 2022.12). Analysis resulting in a population PK/PD model publication.</li>
+      </ul>
+    </section>
 
-</main>
+    <section id="talks">
+      <h2>Conference Presentations</h2>
+      <ul class="talks">
+        <li>
+          <span class="t-title">CReSE: benchmark data and automatic evaluation framework for recommending eligibility criteria from clinical trial information</span>
+          <span class="t-meta">— <span class="venue">EACL 2024, Malta</span> (Mar. 2024) · Poster</span>
+          <span class="p-links">
+            <a class="chip" href="https://youtu.be/0VxXLnHAH30" target="_blank" rel="noopener">Video</a>
+            <a class="chip" href="assets/eacl2024_poster.pdf" target="_blank" rel="noopener">Poster</a>
+          </span>
+        </li>
+        <li>
+          <span class="t-title">How to address data scarcity and bias for AI-powered drug discovery</span>
+          <span class="t-meta">— <span class="venue">2023 Fall Korean Society of Medical Informatics Conference, Seoul</span> (Nov. 2023) · Oral</span>
+        </li>
+        <li>
+          <span class="t-title">An annotated corpus and NLP model for drug safety information extraction from free-text adverse-event reports</span>
+          <span class="t-meta">— <span class="venue">2021 Fall Korean Society of Medical Informatics Conference, Seoul</span> (Nov. 2021) · Oral</span>
+        </li>
+        <li>
+          <span class="t-title">A population PK-PD model of YH12852, a highly selective 5-HT4 receptor agonist</span>
+          <span class="t-meta">— <span class="venue">Population Approach Group in Korea, Iksan</span> (Nov. 2020) · Oral</span>
+        </li>
+        <li>
+          <span class="t-title">Development of an annotation guideline to extract drug-food interaction information for machine learning</span>
+          <span class="t-meta">— <span class="venue">Korean Society for Clinical Pharmacology and Therapeutics, Yeosu</span> (Nov. 2019) · Poster</span>
+        </li>
+        <li>
+          <span class="t-title">A population PK-PD model to characterize the increase in gastrointestinal motility by YH12852</span>
+          <span class="t-meta">— <span class="venue">2019 AAPS PharmSci 360, San Antonio, USA</span> (Nov. 2019) · Poster</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <h2>Awards &amp; Honors</h2>
+      <ul class="awards">
+        <li><strong>First Prize, Best Paper</strong> — The 24th Workshop on Biomedical Language Processing (BioNLP @ ACL 2025), Vienna, Austria (Aug. 2025)</li>
+        <li><strong>Best Article Presentation (1st)</strong> — Korean Society for Clinical Pharmacology and Therapeutics (Nov. 2021)</li>
+        <li><strong>Best Original Research Article (1st)</strong> — The Korean Society of Medical Informatics (Oct. 2021)</li>
+        <li><strong>Presidential Science Scholarship</strong> — Korea Student Aid Foundation (2013 – 2017)</li>
+      </ul>
+    </section>
+
+    <section id="service">
+      <h2>Review Experience</h2>
+      <ul class="service">
+        <li><strong>Conferences:</strong> ML4H (2024, 2025, 2026), MLHC (2025, 2026), BioNLP Workshop (2025)</li>
+        <li><strong>Journal:</strong> JAMIA (2024, 2025, 2026)</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
 
 <footer class="site-footer">
-  <p>© <span id="year">2026</span> Siun Kim · Built with plain HTML/CSS on GitHub Pages</p>
+  <p>© 2026 Siun Kim · Built with plain HTML/CSS on GitHub Pages</p>
 </footer>
 
+<button class="to-top" aria-label="Back to top" title="Back to top">↑</button>
+
 <script>
-  // Mobile nav toggle
-  const toggle = document.querySelector('.nav-toggle');
-  const links = document.querySelector('.nav-links');
-  toggle.addEventListener('click', () => {
-    const open = links.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open);
-  });
-  links.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') links.classList.remove('open');
-  });
+  // Scroll-spy: highlight the section currently in view
+  const navLinks = Array.from(document.querySelectorAll('.side-nav a'));
+  const byId = new Map(navLinks.map(a => [a.getAttribute('href').slice(1), a]));
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const link = byId.get(e.target.id);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+  document.querySelectorAll('.content section[id]').forEach(s => spy.observe(s));
+
+  // Back-to-top button
+  const toTop = document.querySelector('.to-top');
+  const onScroll = () => toTop.classList.toggle('show', window.scrollY > 480);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
 </body>
 </html>
