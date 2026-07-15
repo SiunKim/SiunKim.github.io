@@ -6,14 +6,14 @@
    =========================================================== */
 
 :root {
-  --bg: #f2f2f2;              /* page backdrop (≈ rgba(0,0,0,.05) on white) */
-  --surface: #ffffff;        /* content sheet */
-  --text: #000000;
-  --muted: rgba(0, 0, 0, 0.55);
-  --faint: rgba(0, 0, 0, 0.35);
-  --border: rgba(0, 0, 0, 0.12);
-  --accent: #dd5857;         /* coral red — used sparingly, like Weebly */
-  --accent-soft: #fbeceb;
+  --bg: #ece2d0;             /* page backdrop — warm beige */
+  --surface: #f8f3ea;        /* content sheet — cream */
+  --text: #3f3020;           /* body — espresso brown */
+  --muted: #806c54;          /* secondary — medium brown */
+  --faint: #a99a84;          /* tertiary — soft tan-brown */
+  --border: #ded0ba;         /* hairlines — light tan */
+  --accent: #a05a34;         /* terracotta / rust — used sparingly */
+  --accent-soft: #ecdfce;
   --maxw: 960px;
   --font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
     'Malgun Gothic', 'Segoe UI', Roboto, sans-serif;
@@ -43,7 +43,7 @@ a:hover { color: var(--accent); }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(248, 243, 234, 0.9);
   backdrop-filter: saturate(180%) blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -70,7 +70,7 @@ a:hover { color: var(--accent); }
   flex-wrap: wrap;
 }
 .nav-links a {
-  color: rgba(0, 0, 0, 0.72);
+  color: rgba(63, 48, 32, 0.72);
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -96,7 +96,7 @@ a:hover { color: var(--accent); }
   padding: 8px 56px 40px;
   background: var(--surface);
   border: 1px solid var(--border);
-  box-shadow: 0 1px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 24px rgba(63, 48, 32, 0.08);
 }
 
 section { padding: 34px 0; border-bottom: 1px solid var(--border); }
@@ -300,7 +300,7 @@ ol.pubs li::before {
     background: var(--surface);
     border: 1px solid var(--border);
     padding: 14px 18px;
-    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 26px rgba(63, 48, 32, 0.16);
   }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 7px 0; font-size: 0.78rem; }
