@@ -1,0 +1,273 @@
+/* ===========================================================
+   Siun Kim — personal site styles
+   Plain CSS, no build step. Light + dark (auto) support.
+   =========================================================== */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f7f8fa;
+  --text: #1f2430;
+  --muted: #5c6675;
+  --border: #e4e7ec;
+  --accent: #2f5fd0;
+  --accent-soft: #eaf0fd;
+  --maxw: 820px;
+  --radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171c;
+    --surface: #1b1f26;
+    --text: #e7eaf0;
+    --muted: #9aa4b2;
+    --border: #2b313b;
+    --accent: #7aa2f7;
+    --accent-soft: #1e2634;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 68px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  line-height: 1.65;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------------- Top navigation ---------------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.nav {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.nav-brand { font-weight: 700; color: var(--text); font-size: 1.05rem; }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+.nav-links a { color: var(--muted); font-size: 0.9rem; }
+.nav-links a:hover { color: var(--accent); text-decoration: none; }
+.nav-toggle {
+  display: none;
+  margin-left: auto;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+/* ---------------- Layout ---------------- */
+.page {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+
+section { padding: 30px 0; border-bottom: 1px solid var(--border); }
+section:last-of-type { border-bottom: none; }
+
+h2 {
+  font-size: 1.3rem;
+  margin: 0 0 18px;
+  letter-spacing: -0.01em;
+}
+h3.pub-group {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 26px 0 10px;
+}
+
+/* ---------------- Hero ---------------- */
+.hero {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding-top: 20px;
+}
+.avatar {
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid var(--border);
+  background: var(--surface);
+}
+.avatar-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.hero-body h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+.tagline { font-size: 1.05rem; color: var(--accent); font-weight: 600; margin: 0 0 10px; }
+.summary { color: var(--muted); margin: 0 0 16px; max-width: 52ch; }
+
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.btn {
+  display: inline-block;
+  padding: 7px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: var(--surface);
+  transition: all 0.15s ease;
+}
+.btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.contact { list-style: none; padding: 0; margin: 0; color: var(--muted); font-size: 0.9rem; }
+.contact li { margin: 3px 0; }
+
+/* ---------------- Research tags ---------------- */
+.tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.tags li {
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ---------------- Timeline (experience / education) ---------------- */
+.timeline { list-style: none; padding: 0; margin: 0; }
+.timeline li { display: flex; gap: 20px; padding: 12px 0; border-bottom: 1px dashed var(--border); }
+.timeline li:last-child { border-bottom: none; }
+.timeline .when { flex: 0 0 130px; color: var(--muted); font-size: 0.85rem; padding-top: 2px; }
+.timeline .what strong { display: block; }
+.timeline .where { color: var(--muted); font-size: 0.92rem; }
+
+/* ---------------- Publications ---------------- */
+.note { color: var(--muted); font-size: 0.88rem; margin: 0 0 6px; }
+.me { font-weight: 700; color: var(--text); }
+
+ol.pubs { list-style: none; counter-reset: pub; padding: 0; margin: 0; }
+ol.pubs li {
+  counter-increment: pub;
+  position: relative;
+  padding: 12px 0 12px 34px;
+  border-bottom: 1px solid var(--border);
+}
+ol.pubs li:last-child { border-bottom: none; }
+ol.pubs li::before {
+  content: counter(pub);
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 24px;
+  height: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  font-size: 0.72rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.authors { display: block; font-size: 0.9rem; color: var(--muted); }
+.title { display: inline; font-weight: 600; }
+.title.plain { color: var(--text); font-weight: 600; }
+.venue { font-style: italic; color: var(--muted); }
+.year { color: var(--muted); font-size: 0.88rem; }
+.badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  font-size: 0.72rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 6px;
+}
+
+/* ---------------- Projects / talks / awards / service ---------------- */
+.projects, .talks, .awards, .service { list-style: none; padding: 0; margin: 0; }
+.projects li, .talks li, .awards li, .service li {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+.projects li:last-child, .talks li:last-child,
+.awards li:last-child, .service li:last-child { border-bottom: none; }
+.projects li strong { color: var(--text); }
+
+/* ---------------- Footer ---------------- */
+.site-footer {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.82rem;
+  padding: 24px 20px 40px;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 52px;
+    right: 12px;
+    left: 12px;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 6px 0; font-size: 0.95rem; }
+  .nav-toggle { display: block; }
+
+  .hero { flex-direction: column; text-align: center; gap: 18px; }
+  .summary { max-width: none; }
+  .links, .tags { justify-content: center; }
+  .contact { text-align: center; }
+  .avatar { width: 128px; height: 128px; }
+
+  .timeline li { flex-direction: column; gap: 2px; }
+  .timeline .when { flex-basis: auto; }
+}
