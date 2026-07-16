@@ -375,19 +375,34 @@
 <button class="to-top" aria-label="Back to top" title="Back to top">↑</button>
 
 <script>
-  // Scroll-spy: highlight the section currently in view
+  // Scroll-spy: highlight the section in view, with top/bottom edge handling
+  // so the first and last sections (which can't reach a mid-viewport band)
+  // still activate when the page is scrolled fully up or down.
   const navLinks = Array.from(document.querySelectorAll('.side-nav a'));
   const byId = new Map(navLinks.map(a => [a.getAttribute('href').slice(1), a]));
-  const spy = new IntersectionObserver((entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        navLinks.forEach(a => a.classList.remove('active'));
-        const link = byId.get(e.target.id);
-        if (link) link.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
-  document.querySelectorAll('.content section[id]').forEach(s => spy.observe(s));
+  const sections = Array.from(document.querySelectorAll('.content section[id]'));
+
+  const setActive = (id) =>
+    navLinks.forEach(a => a.classList.toggle('active', a === byId.get(id)));
+
+  const spyScroll = () => {
+    if (!sections.length) return;
+    // At the very bottom, the last section can't reach the line — force it.
+    const atBottom = Math.ceil(window.scrollY + window.innerHeight)
+      >= document.documentElement.scrollHeight - 2;
+    if (atBottom) { setActive(sections[sections.length - 1].id); return; }
+    // Otherwise: the last section whose top has passed a line 30% down.
+    const line = window.innerHeight * 0.3;
+    let current = sections[0].id;
+    for (const s of sections) {
+      if (s.getBoundingClientRect().top <= line) current = s.id;
+      else break;
+    }
+    setActive(current);
+  };
+  window.addEventListener('scroll', spyScroll, { passive: true });
+  window.addEventListener('resize', spyScroll, { passive: true });
+  spyScroll();
 
   // Back-to-top button
   const toTop = document.querySelector('.to-top');
