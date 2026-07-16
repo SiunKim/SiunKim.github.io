@@ -70,7 +70,7 @@ a:hover { color: var(--accent); }
   font-size: 3rem; font-weight: 300; color: var(--accent); background: var(--accent-soft);
 }
 .sidebar h1 { font-size: 1.9rem; font-weight: 300; letter-spacing: 0.01em; line-height: 1.1; margin: 0 0 8px; }
-.tagline { font-size: 0.92rem; font-weight: 600; color: var(--accent); margin: 0 0 14px; }
+.tagline { font-size: 0.92rem; font-weight: 600; color: var(--text); margin: 0 0 14px; }
 .summary { font-size: 0.85rem; color: var(--muted); margin: 0 0 20px; }
 
 /* social icons */
@@ -94,10 +94,9 @@ a:hover { color: var(--accent); }
 .side-nav { display: flex; flex-direction: column; border-top: 1px solid var(--border); padding-top: 16px; }
 .side-nav a {
   color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0;
   padding: 7px 0 7px 14px;
   border-left: 2px solid transparent;
 }
@@ -131,8 +130,7 @@ h3.pub-group {
 
 /* research tags */
 .tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 9px; }
-.tags li { border: 1px solid var(--border); padding: 7px 14px; font-size: 0.8rem; font-weight: 500; transition: all 120ms ease; }
-.tags li:hover { border-color: var(--accent); color: var(--accent); }
+.tags li { border: 1px solid var(--border); padding: 7px 14px; font-size: 0.8rem; font-weight: 500; color: var(--muted); }
 
 /* timeline */
 .timeline { list-style: none; padding: 0; margin: 0; }
@@ -150,14 +148,14 @@ ol.pubs li:last-child { border-bottom: none; }
 ol.pubs li::before {
   content: counter(pub);
   position: absolute; left: 0; top: 21px;
-  font-size: 0.95rem; font-weight: 700; color: var(--accent);
+  font-size: 0.95rem; font-weight: 700; color: var(--faint);
   font-variant-numeric: tabular-nums;
 }
 .p-title { order: 1; font-size: 1.04rem; font-weight: 700; color: var(--text); line-height: 1.42; }
 .authors { order: 2; font-size: 0.8rem; color: var(--faint); }
 .p-meta { order: 3; font-size: 0.87rem; }
 .venue { font-style: italic; color: var(--muted); }
-.year { color: var(--accent); font-weight: 700; }
+.year { color: var(--muted); font-weight: 600; }
 .badge { display: inline-block; margin-left: 4px; padding: 2px 9px; font-size: 0.66rem; font-weight: 600; background: var(--accent-soft); color: var(--accent); }
 
 /* link chips + TL;DR */
@@ -184,14 +182,14 @@ ol.pubs li::before {
 /* ---------------- Back to top ---------------- */
 .to-top {
   position: fixed; right: 24px; bottom: 24px;
-  width: 42px; height: 42px; border-radius: 50%;
-  border: 1px solid var(--accent); background: var(--surface); color: var(--accent);
-  font-size: 1.1rem; cursor: pointer; box-shadow: 0 4px 14px rgba(63, 48, 32, 0.18);
+  width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+  font-size: 1.05rem; cursor: pointer;
   opacity: 0; transform: translateY(10px); pointer-events: none; transition: all 200ms ease;
   z-index: 60;
 }
 .to-top.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
-.to-top:hover { background: var(--accent); color: #fff; }
+.to-top:hover { border-color: var(--muted); color: var(--text); }
 
 /* ---------------- Footer ---------------- */
 .site-footer { max-width: var(--maxw); margin: 0 auto; text-align: center; color: var(--faint); font-size: 0.72rem; letter-spacing: 0.04em; padding: 4px 28px 40px; }
