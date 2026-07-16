@@ -38,9 +38,9 @@ a:hover { color: var(--accent); }
 .wrap { max-width: 920px; margin: 16px auto; padding: 0 46px; }
 
 /* ---------------- Masthead ---------------- */
-.masthead { display: flex; gap: 30px; align-items: flex-start; padding: 42px 0 26px; }
-.masthead .avatar { width: 176px; height: 176px; flex: 0 0 176px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); background: var(--bg); }
-.avatar-fallback { display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 3.6rem; font-weight: 500; color: var(--accent); background: var(--accent-soft); }
+.masthead { display: flex; gap: 34px; align-items: center; padding: 44px 0 28px; }
+.masthead .avatar { width: 200px; height: 200px; flex: 0 0 200px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); background: var(--bg); }
+.avatar-fallback { display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 4rem; font-weight: 500; color: var(--accent); background: var(--accent-soft); }
 .identity { min-width: 0; }
 .identity h1 { font-family: var(--font-head); font-size: 2.15rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.05; margin: 0 0 4px; }
 .identity .tagline { font-family: var(--font-ui); font-size: 0.92rem; font-weight: 600; color: var(--text); margin: 0 0 8px; }

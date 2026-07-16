@@ -314,8 +314,17 @@
   const setActive = (id) =>
     navLinks.forEach(a => a.classList.toggle('active', a === byId.get(id)));
 
+  // When a nav item is clicked, lock its highlight through the click-scroll so
+  // the spy doesn't immediately hand it to a neighbouring section.
+  let lockUntil = 0;
+  navLinks.forEach(a => a.addEventListener('click', () => {
+    setActive(a.getAttribute('href').slice(1));
+    lockUntil = Date.now() + 900;
+  }));
+
   const onScroll = () => {
     if (topnav) topnav.classList.toggle('stuck', topnav.getBoundingClientRect().top <= 0.5);
+    if (Date.now() < lockUntil) return;
     if (!sections.length) return;
     const atBottom = Math.ceil(window.scrollY + window.innerHeight)
       >= document.documentElement.scrollHeight - 2;
