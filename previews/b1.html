@@ -41,10 +41,17 @@ a:hover { color: var(--accent); }
 .side-nav a:hover { color: var(--accent); }
 .side-nav a.active { color: var(--accent); border-left-color: var(--accent); }
 
-.content { flex:1 1 auto; min-width:0; padding:40px 46px; border-left:1px solid var(--border); }
-section { padding: 44px 0 24px; border-bottom:1px solid var(--border); }
+.content { flex:1 1 auto; min-width:0; padding:40px 46px; border-left:1px solid var(--border); counter-reset: sec; }
+section { position:relative; padding: 44px 0 24px 54px; border-bottom:1px solid var(--border); counter-increment: sec; }
 section:first-child { padding-top: 8px; }
 section:last-child { border-bottom:none; }
+section::before {
+  content: counter(sec, decimal-leading-zero);
+  position: absolute; left: 0; top: 47px;
+  font-family: var(--font-head); font-size: 0.9rem; font-weight: 600;
+  color: var(--faint); font-variant-numeric: tabular-nums; letter-spacing: 0.02em;
+}
+section:first-child::before { top: 11px; }
 h2 { font-family: var(--font-head); font-size: 1.5rem; font-weight:600; letter-spacing:-0.01em; margin:0 0 22px; padding-bottom:12px; border-bottom:1px solid var(--border); }
 h3.pub-group { font-family: var(--font-ui); font-size:0.82rem; font-weight:700; letter-spacing:0.02em; color: var(--muted); margin:30px 0 12px; }
 
@@ -104,6 +111,7 @@ ol.pubs li::before { content: counter(pub); position:absolute; left:0; top:22px;
     <nav class="side-nav" aria-label="Section navigation">
       <a href="#research">Research</a>
       <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#publications">Publications</a>
       <a href="#awards">Awards</a>
     </nav>
@@ -125,6 +133,13 @@ ol.pubs li::before { content: counter(pub); position:absolute; left:0; top:22px;
         <li><div class="when">Present</div><div class="what"><strong>Sr. AI Engineer</strong><span class="where">Selta Square</span></div></li>
         <li><div class="when">2024.8 – 2025.12</div><div class="what"><strong>Research Assistant Professor</strong><span class="where">Biomedical Research Institute, Seoul National University Hospital</span></div></li>
         <li><div class="when">2023.3 – 2024.7</div><div class="what"><strong>Post-doctoral Researcher</strong><span class="where">Seoul National University Hospital</span></div></li>
+      </ul>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li><div class="when">2018.3 – 2023.2</div><div class="what"><strong>Ph.D. in Applied Bio-Engineering</strong><span class="where">Seoul National University</span></div></li>
+        <li><div class="when">2013.3 – 2018.2</div><div class="what"><strong>B.S. in Biology and Anthropology</strong><span class="where">Seoul National University</span></div></li>
       </ul>
     </section>
     <section id="publications">
@@ -155,7 +170,7 @@ ol.pubs li::before { content: counter(pub); position:absolute; left:0; top:22px;
         <li>
           <span class="authors"><span class="me">Siun Kim</span>, Howard Lee.</span>
           <span class="p-title">The Era of Biologics is Coming.</span>
-          <span class="p-meta"><span class="venue">Young Doc Press</span> <span class="year">2019</span> <span class="badge">Selected as 2022 Sejong Book</span></span>
+          <span class="p-meta"><span class="venue">Young Doc Press</span> <span class="year">2019</span></span>
           <span class="p-links"><a class="chip" href="#">Kyobo</a></span>
         </li>
       </ol>
