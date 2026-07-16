@@ -49,6 +49,7 @@ a:hover { color: var(--accent); }
 .content { flex: 1 1 auto; min-width: 0; padding: 40px 46px; border-left: 1px solid var(--border); }
 section { padding: 28px 0 18px; border-bottom: 1px solid var(--border); }
 .content > section:first-child { padding-top: 8px; }
+.content > .pair:first-child > section { padding-top: 8px; }
 h2 { font-family: var(--font-head); font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; color: var(--text); margin: 0 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
 .h2-meta { font-family: var(--font-ui); font-size: 0.75rem; font-weight: 500; color: var(--faint); letter-spacing: 0.03em; white-space: nowrap; }
 .pair h2 { font-size: 1.25rem; }
@@ -151,8 +152,8 @@ ol.pubs li.first-author .p-body { border-left-color: var(--accent); }
       <li>+82-10-6657-0806</li>
     </ul>
     <nav class="side-nav" aria-label="Section navigation">
-      <a href="#research">Research</a>
       <a href="#experience">Experience / Education</a>
+      <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
       <a href="#talks">Talks</a>
@@ -161,17 +162,6 @@ ol.pubs li.first-author .p-body { border-left-color: var(--accent); }
   </aside>
 
   <main class="content">
-    <section id="research">
-      <h2>Research Interests</h2>
-      <ul class="tags">
-        <li>Clinical / Document Information Extraction</li>
-        <li>Biomedical Natural Language Processing</li>
-        <li>ML-based Drug Development</li>
-        <li>Clinical Informatics</li>
-        <li>Clinical Pharmacology &amp; Regulatory Science</li>
-      </ul>
-    </section>
-
     <div class="pair">
       <section id="experience">
         <h2>Experience</h2>
@@ -190,6 +180,17 @@ ol.pubs li.first-author .p-body { border-left-color: var(--accent); }
         </ul>
       </section>
     </div>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul class="tags">
+        <li>Clinical / Document Information Extraction</li>
+        <li>Biomedical Natural Language Processing</li>
+        <li>ML-based Drug Development</li>
+        <li>Clinical Informatics</li>
+        <li>Clinical Pharmacology &amp; Regulatory Science</li>
+      </ul>
+    </section>
 
     <section id="publications">
       <h2>Publications <span class="h2-meta">14 papers · 2020–2026</span></h2>
