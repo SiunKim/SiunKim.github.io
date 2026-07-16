@@ -205,9 +205,6 @@ ol.pubs li::before {
 .to-top.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .to-top:hover { border-color: var(--muted); color: var(--text); }
 
-/* ---------------- Footer ---------------- */
-.site-footer { font-family: var(--font-ui); max-width: var(--maxw); margin: 0 auto; text-align: center; color: var(--faint); font-size: 0.72rem; letter-spacing: 0.02em; padding: 4px 28px 40px; }
-
 /* ---------------- Responsive ---------------- */
 @media (max-width: 860px) {
   .page { flex-direction: column; margin: 0; border: none; box-shadow: none; max-width: 680px; }
