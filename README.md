@@ -2,6 +2,10 @@
 
 Personal website for **Siun Kim** — a single-page static site (plain HTML/CSS), hosted on GitHub Pages.
 
+> **`index.html`, `style.css` and `assets/cv.pdf` are generated.** The source is `cv/data/profile.yaml`
+> in the private `job-apply-2610` repo; run `python build.py --site <path to this repo>` there and commit
+> the result here. Edits made directly to these files will be overwritten by the next build.
+
 **Live URL (after deploy):** https://siunkim.github.io
 
 ## Structure

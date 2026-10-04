@@ -132,3 +132,12 @@ ol.pubs li.first-author .p-body { border-left-color: var(--accent); }
   ol.pubs li { grid-template-columns: 40px 1fr; }
   .p-venue-tag { grid-column: 2; justify-self: start; text-align: left; max-width: none; padding-left: 18px; padding-top: 6px; }
 }
+
+/* ---------------- Generated-content additions (build.py) ---------------- */
+.masthead.no-photo { padding-top: 40px; }
+.timeline .detail { display: block; color: var(--faint); font-family: var(--font-ui); font-size: 0.74rem; line-height: 1.45; margin-top: 3px; }
+.timeline .detail em { font-family: var(--font-body); font-size: 0.86rem; color: var(--muted); }
+#projects h3.pub-group:first-of-type { margin-top: 4px; }
+.contrib { font-family: var(--font-ui); font-size: 0.7rem; font-weight: 600; color: var(--faint); white-space: nowrap; }
+#awards h3.pub-group { margin-top: 18px; }
+.projects li.draft { background: #fff6d6; outline: 1px dashed #d8b23a; }
