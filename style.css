@@ -141,3 +141,7 @@ ol.pubs li.first-author .p-body { border-left-color: var(--accent); }
 .contrib { font-family: var(--font-ui); font-size: 0.7rem; font-weight: 600; color: var(--faint); white-space: nowrap; }
 #awards h3.pub-group { margin-top: 18px; }
 .projects li.draft { background: #fff6d6; outline: 1px dashed #d8b23a; }
+
+/* linked product title (public beta) */
+.projects a.plink { color: var(--text); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 3px; }
+.projects a.plink:hover { color: var(--accent); text-decoration-color: var(--accent); }
